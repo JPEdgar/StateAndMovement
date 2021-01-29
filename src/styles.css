@@ -1,0 +1,14 @@
+.board {
+  height: 250px;
+  width: 250px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.actor {
+  background-color: blue;
+  height: 25px;
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+}

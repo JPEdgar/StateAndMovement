@@ -1,0 +1,20 @@
+$boardHeight: 250;
+$boardWidth: 250;
+$bordeMiddle: $boardWidth / 2;
+$actorHeight: 25px;
+$actorWidth: 50px;
+
+.board {
+  height: $boardHeight + px;
+  width: $boardWidth + px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.actor {
+  background-color: blue;
+  height: $actorHeight;
+  width: $actorWidth;
+  position: absolute;
+  bottom: 10px;
+}
