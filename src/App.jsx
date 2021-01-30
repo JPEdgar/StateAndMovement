@@ -1,22 +1,28 @@
 import React from "react";
 
 import Board from "./component/Board";
+import useKeyPress from "./component/KeyPress";
 
 import "./styles.css";
 
 function App() {
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      console.log("enter pressed.");
-    }
-  };
+  const rightDown = useKeyPress("ArrowRight");
+  const leftDown = useKeyPress("ArrowLeft");
+
+  const [count, setCount] = React.useState(0);
+
+  if (rightDown) {
+    setCount((curr) => curr + 1);
+  }
+
+  if (leftDown) {
+    setCount((curr) => curr - 1);
+  }
 
   return (
     <>
-      <Board />
-      <div onKeyPress={() => handleKeyPress()}>
-        <h1>test</h1>
-      </div>
+      <h3>{count}</h3>
+      {/* <Board dir={dir} /> */}
     </>
   );
 }
