@@ -1,15 +1,9 @@
 import React from "react";
 
-function Actor(props) {
-  const direction = props.dir + "px";
+export default function Actor() {
   return (
     <>
-      <div
-        className="actor"
-        style={{ transform: `translateX(${direction})` }}
-      />
+
     </>
   );
 }
-
-export default Actor;
