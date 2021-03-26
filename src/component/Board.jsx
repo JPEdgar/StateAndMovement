@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react";
 import { BoardSettings, Pawn } from "./Settings";
 
 export default function BuildBoard() {
@@ -12,8 +12,8 @@ export default function BuildBoard() {
 }
 
 export function UpdateActor(xDir, yDir) {
-const [xPos, setX] = useState(Pawn.startX)
-const [yPos, setY] = useState(Pawn.startY)
+  const [xPos, setX] = useState(Pawn.startX);
+  const [yPos, setY] = useState(Pawn.startY);
 }
 
 function BuildCell(i, j) {

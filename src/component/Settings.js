@@ -1,10 +1,5 @@
 export const BoardSettings = {
-    numRows: 15,
-    numCols: 15,
+    gridMargin: [30, 10],
+    numRows: 20,
     cellSize: 40
-}
-
-export const Pawn = {
-    startX: 3,
-    startY: 2
 }
